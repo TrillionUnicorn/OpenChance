@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.BBBYQn6U.js",
+    "file": "_app/immutable/entry/app.MEfLnMUd.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -36,7 +36,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.BqpM8thq.js",
+    "file": "_app/immutable/nodes/1.C-iAjT6Z.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -46,11 +46,11 @@
       "_CCCRRPrn.js",
       "_CYnXqZjO.js",
       "_Ce4hLhxx.js",
-      "_CkJ2Cuzc.js"
+      "_grL8hCzz.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/nodes/2.29WjoMJ2.js",
+    "file": "_app/immutable/nodes/2.1r09cLzp.js",
     "name": "nodes/2",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
     "isEntry": true,
@@ -110,7 +110,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/5.js": {
-    "file": "_app/immutable/nodes/5.BnmSbu6C.js",
+    "file": "_app/immutable/nodes/5.BrStjMs_.js",
     "name": "nodes/5",
     "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
     "isEntry": true,
@@ -189,14 +189,6 @@
       "_CYnXqZjO.js"
     ]
   },
-  "_CkJ2Cuzc.js": {
-    "file": "_app/immutable/chunks/CkJ2Cuzc.js",
-    "name": "entry",
-    "imports": [
-      "_Ce4hLhxx.js",
-      "_CYnXqZjO.js"
-    ]
-  },
   "_DOeSVdHi.js": {
     "file": "_app/immutable/chunks/DOeSVdHi.js",
     "name": "props",
@@ -236,13 +228,21 @@
     "file": "_app/immutable/assets/challenges.CRyvd575.css",
     "src": "_challenges.CRyvd575.css"
   },
+  "_grL8hCzz.js": {
+    "file": "_app/immutable/chunks/grL8hCzz.js",
+    "name": "entry",
+    "imports": [
+      "_Ce4hLhxx.js",
+      "_CYnXqZjO.js"
+    ]
+  },
   "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.QWASF2h1.js",
+    "file": "_app/immutable/entry/start.zMfKKYyv.js",
     "name": "entry/start",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_CkJ2Cuzc.js"
+      "_grL8hCzz.js"
     ]
   }
 }

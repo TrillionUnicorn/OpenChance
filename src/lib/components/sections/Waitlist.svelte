@@ -123,10 +123,11 @@
 
           <!-- Role Selection -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-3">
-              I'm interested in:
-            </label>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <fieldset>
+              <legend class="block text-sm font-semibold text-gray-700 mb-3">
+                I'm interested in:
+              </legend>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <label class="relative flex items-center justify-center p-4 border-2 rounded-lg cursor-pointer transition-all {role === 'solver' ? 'border-primary bg-primary/5' : 'border-gray-200 hover:border-gray-300'}">
                 <input
                   type="radio"
@@ -172,6 +173,7 @@
                 </div>
               </label>
             </div>
+            </fieldset>
           </div>
 
           {#if error}

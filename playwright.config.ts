@@ -9,7 +9,7 @@ export default defineConfig({
 	reporter: 'html',
 	
 	use: {
-		baseURL: 'http://localhost:5173',
+		baseURL: 'http://localhost:4173',
 		trace: 'on-first-retry',
 		screenshot: 'only-on-failure',
 		video: 'retain-on-failure'
@@ -31,9 +31,9 @@ export default defineConfig({
 	],
 
 	webServer: {
-		command: 'bun run build && bun run preview',
+		command: 'bun run preview',
 		port: 4173,
-		reuseExistingServer: !process.env.CI
+		reuseExistingServer: true
 	}
 });
 

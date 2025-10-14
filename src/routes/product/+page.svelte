@@ -171,14 +171,15 @@
       <div class="flex flex-col lg:flex-row gap-6">
         <!-- Category Filter -->
         <div class="flex-1">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Category</label>
-          <div class="flex flex-wrap gap-2">
+          <div class="block text-sm font-semibold text-gray-700 mb-2" role="heading" aria-level="3">Category</div>
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Category filters">
             {#each categories as category}
               <button
                 onclick={() => selectedCategory = category}
                 class="px-3 py-1.5 rounded-full text-sm font-medium transition-all {selectedCategory === category
                   ? 'bg-primary text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
+                aria-pressed={selectedCategory === category}
               >
                 {getCategoryIcon(category)} {category === 'all' ? 'All' : category.replace('-', ' ')}
               </button>
@@ -188,8 +189,9 @@
 
         <!-- Difficulty Filter -->
         <div class="w-full lg:w-48">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Difficulty</label>
+          <label for="difficulty-select" class="block text-sm font-semibold text-gray-700 mb-2">Difficulty</label>
           <select
+            id="difficulty-select"
             bind:value={selectedDifficulty}
             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
           >
@@ -203,8 +205,9 @@
 
         <!-- Sort By -->
         <div class="w-full lg:w-48">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Sort By</label>
+          <label for="sort-select" class="block text-sm font-semibold text-gray-700 mb-2">Sort By</label>
           <select
+            id="sort-select"
             bind:value={sortBy}
             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
           >

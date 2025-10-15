@@ -1,0 +1,211 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_environment.js"
+    ]
+  },
+  "_Badge.js": {
+    "file": "chunks/Badge.js",
+    "name": "Badge",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_Footer.CYT1octV.css": {
+    "file": "_app/immutable/assets/Footer.CYT1octV.css",
+    "src": "_Footer.CYT1octV.css"
+  },
+  "_Footer.js": {
+    "file": "chunks/Footer.js",
+    "name": "Footer",
+    "imports": [
+      "_index.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Footer.CYT1octV.css"
+    ]
+  },
+  "_challenges.CRyvd575.css": {
+    "file": "_app/immutable/assets/challenges.CRyvd575.css",
+    "src": "_challenges.CRyvd575.css"
+  },
+  "_challenges.js": {
+    "file": "chunks/challenges.js",
+    "name": "challenges",
+    "imports": [
+      "_index.js",
+      "_Footer.js",
+      "_Badge.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/challenges.CRyvd575.css"
+    ]
+  },
+  "_context.js": {
+    "file": "chunks/context.js",
+    "name": "context"
+  },
+  "_environment.js": {
+    "file": "chunks/environment.js",
+    "name": "environment"
+  },
+  "_equality.js": {
+    "file": "chunks/equality.js",
+    "name": "equality"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports",
+    "imports": [
+      "_utils2.js",
+      "_equality.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index",
+    "imports": [
+      "_context.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_index.js",
+      "_environment.js",
+      "_utils2.js",
+      "_equality.js",
+      "_context.js"
+    ]
+  },
+  "_shared.js": {
+    "file": "chunks/shared.js",
+    "name": "shared",
+    "imports": [
+      "_utils.js"
+    ]
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js",
+    "name": "utils"
+  },
+  "_utils2.js": {
+    "file": "chunks/utils2.js",
+    "name": "utils"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_shared.js",
+      "_utils2.js",
+      "_environment.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_context.js",
+      "_utils2.js",
+      "_exports.js",
+      "_utils.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_environment.js",
+      "_exports.js",
+      "_utils.js",
+      "_internal.js",
+      "_shared.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.CABxyxux.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Footer.js",
+      "_context.js",
+      "_challenges.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DIBZHwF3.css"
+    ]
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "entries/pages/contact/_page.svelte.js",
+    "name": "entries/pages/contact/_page.svelte",
+    "src": "src/routes/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Footer.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.5HGIdRpS.css"
+    ]
+  },
+  "src/routes/pitch/+page.svelte": {
+    "file": "entries/pages/pitch/_page.svelte.js",
+    "name": "entries/pages/pitch/_page.svelte",
+    "src": "src/routes/pitch/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Footer.js",
+      "_context.js",
+      "_Badge.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Q3WUQuM0.css"
+    ]
+  },
+  "src/routes/product/+page.svelte": {
+    "file": "entries/pages/product/_page.svelte.js",
+    "name": "entries/pages/product/_page.svelte",
+    "src": "src/routes/product/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_challenges.js",
+      "_Footer.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.qnPUtS9m.css"
+    ]
+  }
+}

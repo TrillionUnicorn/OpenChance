@@ -1,0 +1,33 @@
+{
+  "name": "openchance-production-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenChance Production 1 - Modern Stack (SvelteKit + Bun + PostgreSQL)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "db:generate": "cd packages/db && bun run generate",
+    "db:migrate": "cd packages/db && bun run migrate",
+    "db:studio": "cd packages/db && bun run studio"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "bun": ">=1.0.0"
+  },
+  "packageManager": "bun@1.0.0"
+}
+

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.MEfLnMUd.js",
+    "file": "_app/immutable/entry/app.BTAfBe0i.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -36,7 +36,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.C-iAjT6Z.js",
+    "file": "_app/immutable/nodes/1.C1INrcB0.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -46,7 +46,7 @@
       "_CCCRRPrn.js",
       "_CYnXqZjO.js",
       "_Ce4hLhxx.js",
-      "_grL8hCzz.js"
+      "_DTP1cZoU.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
@@ -196,6 +196,14 @@
       "_CYnXqZjO.js"
     ]
   },
+  "_DTP1cZoU.js": {
+    "file": "_app/immutable/chunks/DTP1cZoU.js",
+    "name": "entry",
+    "imports": [
+      "_Ce4hLhxx.js",
+      "_CYnXqZjO.js"
+    ]
+  },
   "_DYn3-3Rs.js": {
     "file": "_app/immutable/chunks/DYn3-3Rs.js",
     "name": "this",
@@ -228,21 +236,13 @@
     "file": "_app/immutable/assets/challenges.CRyvd575.css",
     "src": "_challenges.CRyvd575.css"
   },
-  "_grL8hCzz.js": {
-    "file": "_app/immutable/chunks/grL8hCzz.js",
-    "name": "entry",
-    "imports": [
-      "_Ce4hLhxx.js",
-      "_CYnXqZjO.js"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.zMfKKYyv.js",
+    "file": "_app/immutable/entry/start.DRyWGI8a.js",
     "name": "entry/start",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_grL8hCzz.js"
+      "_DTP1cZoU.js"
     ]
   }
 }

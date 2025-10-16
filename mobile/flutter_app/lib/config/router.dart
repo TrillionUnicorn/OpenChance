@@ -1,5 +1,15 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../screens/splash_screen.dart';
+import '../screens/login_screen.dart';
+import '../screens/home_screen.dart';
+import '../screens/challenges_screen.dart';
+import '../screens/challenge_detail_screen.dart';
+import '../screens/applications_screen.dart';
+import '../screens/messages_screen.dart';
+import '../screens/chat_screen.dart';
+import '../screens/profile_screen.dart';
 
 final goRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -41,7 +51,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         path: '/challenges/:id',
         name: 'challenge-detail',
         builder: (context, state) => ChallengeDetailScreen(
-          id: state.pathParameters['id']!,
+          challengeId: state.pathParameters['id']!,
         ),
       ),
       GoRoute(
@@ -96,28 +106,6 @@ final goRouterProvider = Provider<GoRouter>((ref) {
 });
 
 // Placeholder screens (to be implemented)
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: CircularProgressIndicator()),
-    );
-  }
-}
-
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Login Screen')),
-    );
-  }
-}
-
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({Key? key}) : super(key: key);
 
@@ -129,41 +117,6 @@ class RegisterScreen extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Home Screen')),
-    );
-  }
-}
-
-class ChallengesScreen extends StatelessWidget {
-  const ChallengesScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Challenges Screen')),
-    );
-  }
-}
-
-class ChallengeDetailScreen extends StatelessWidget {
-  final String id;
-
-  const ChallengeDetailScreen({Key? key, required this.id}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('Challenge Detail: $id')),
-    );
-  }
-}
-
 class CreateChallengeScreen extends StatelessWidget {
   const CreateChallengeScreen({Key? key}) : super(key: key);
 
@@ -171,52 +124,6 @@ class CreateChallengeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(child: Text('Create Challenge Screen')),
-    );
-  }
-}
-
-class ApplicationsScreen extends StatelessWidget {
-  const ApplicationsScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Applications Screen')),
-    );
-  }
-}
-
-class MessagesScreen extends StatelessWidget {
-  const MessagesScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Messages Screen')),
-    );
-  }
-}
-
-class ChatScreen extends StatelessWidget {
-  final String conversationId;
-
-  const ChatScreen({Key? key, required this.conversationId}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('Chat: $conversationId')),
-    );
-  }
-}
-
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Profile Screen')),
     );
   }
 }

@@ -1,24 +1,80 @@
-# 🚀 OpenChance PRODUCTION_1 - Modern Stack
+# 💼 OpenChance PRODUCTION_3 - Freelance Marketplace
 
-**Stack:** SvelteKit 2 + Bun + PostgreSQL + tRPC  
-**Architecture:** Monorepo with Turborepo  
+**Stack:** Vue.js 3 + Express + MySQL + REST API
+**Architecture:** Modular Monolith
+**Target:** Freelancers & Clients for Service-Based Work
 **Status:** In Active Development
 
 ---
 
 ## 📋 OVERVIEW
 
-This is PRODUCTION_1 - the modern, cutting-edge implementation of OpenChance using the latest technologies for maximum performance and developer experience.
+This is PRODUCTION_3 - the **Freelance Marketplace** designed specifically for freelancers offering services and clients looking to hire talent for projects.
 
 **Key Technologies:**
-- **Frontend:** SvelteKit 2, Tailwind CSS 3, TypeScript
-- **Backend:** Bun, Hono, tRPC
-- **Database:** PostgreSQL 16, Drizzle ORM
+- **Frontend:** Vue.js 3, Vuex, Tailwind CSS 3, TypeScript
+- **Backend:** Express.js, Node.js 20
+- **Database:** MySQL 8, Sequelize ORM
 - **Cache:** Redis
-- **Search:** Meilisearch
-- **Auth:** Clerk
-- **Payments:** Stripe
-- **Email:** Resend (or MailHog for local dev)
+- **Search:** Elasticsearch
+- **Auth:** Passport.js (Local, Google, LinkedIn)
+- **Payments:** Stripe Connect + PayPal
+- **Email:** Mailgun
+- **File Storage:** AWS S3
+
+---
+
+## 🎯 MARKETPLACE FEATURES
+
+### Service Categories
+- **Design:** Logo, UI/UX, Graphic Design, Illustration
+- **Development:** Web, Mobile, Backend, DevOps
+- **Marketing:** SEO, Content, Social Media, Email
+- **Writing:** Copywriting, Technical Writing, Translation
+- **Video:** Editing, Animation, Production
+- **Business:** Consulting, Strategy, Project Management
+
+### Flexible Pricing Models
+- **Hourly Rate:** Pay by the hour with time tracking
+- **Fixed Price:** Set project budget upfront
+- **Milestone-Based:** Split payment by deliverables
+- **Retainer:** Monthly recurring services
+- **Package Deals:** Pre-defined service packages
+
+### Time Tracking
+- **Built-in Timer:** Track work hours automatically
+- **Manual Entry:** Add time manually with notes
+- **Screenshots:** Optional work proof (privacy-focused)
+- **Activity Tracking:** Monitor productivity
+- **Invoicing:** Auto-generate invoices from tracked time
+
+### Portfolio Showcase
+- **Project Gallery:** Display past work with images/videos
+- **Case Studies:** Detailed project descriptions
+- **Client Testimonials:** Reviews and ratings
+- **Skills & Expertise:** Tag your specializations
+- **Certifications:** Upload certificates and credentials
+
+### Skill Verification
+- **Skill Tests:** Platform-provided assessments
+- **Certifications:** Verify external certifications
+- **Portfolio Review:** Manual verification by admins
+- **Badges:** Display verified skills
+- **Ranking System:** Top-rated freelancers
+
+### Dispute Resolution
+- **Mediation System:** Platform mediates disputes
+- **Escrow Protection:** Funds held until work approved
+- **Refund Policy:** Clear refund guidelines
+- **Evidence Submission:** Upload proof for disputes
+- **Resolution Timeline:** 7-14 day resolution process
+
+### Commission Model
+- **Platform Fee:** 10-20% commission on transactions
+- **Tiered Pricing:** Lower fees for high-volume freelancers
+- **Subscription Option:** Pay monthly for lower fees
+- **Withdrawal Fees:** Minimal fees for payouts
+- **Currency Support:** Multiple currencies supported
 
 ---
 

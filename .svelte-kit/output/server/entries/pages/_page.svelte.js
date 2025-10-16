@@ -1,4 +1,4 @@
-import { x as head, z as ensure_array_like, F as attr_class, G as stringify } from "../../chunks/index.js";
+import { V as head, X as ensure_array_like, W as attr_class, Z as stringify } from "../../chunks/index2.js";
 import { e as escape_html } from "../../chunks/context.js";
 function _page($$renderer) {
   const challenges = [

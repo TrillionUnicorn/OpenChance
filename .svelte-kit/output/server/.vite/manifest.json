@@ -17,16 +17,13 @@
     "file": "chunks/environment.js",
     "name": "environment"
   },
-  "_equality.js": {
-    "file": "chunks/equality.js",
-    "name": "equality"
-  },
   "_exports.js": {
     "file": "chunks/exports.js",
-    "name": "exports",
-    "imports": [
-      "_equality.js"
-    ]
+    "name": "exports"
+  },
+  "_false.js": {
+    "file": "chunks/false.js",
+    "name": "false"
   },
   "_index.js": {
     "file": "chunks/index.js",
@@ -35,14 +32,21 @@
       "_context.js"
     ]
   },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index",
+    "imports": [
+      "_context.js",
+      "_false.js"
+    ]
+  },
   "_internal.js": {
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_index.js",
-      "_environment.js",
-      "_equality.js",
-      "_context.js"
+      "_index2.js",
+      "_context.js",
+      "_environment.js"
     ]
   },
   "_shared.js": {
@@ -50,6 +54,13 @@
     "name": "shared",
     "imports": [
       "_utils.js"
+    ]
+  },
+  "_state.svelte.js": {
+    "file": "chunks/state.svelte.js",
+    "name": "state.svelte",
+    "imports": [
+      "_context.js"
     ]
   },
   "_utils.js": {
@@ -64,6 +75,7 @@
     "imports": [
       "_shared.js",
       "_utils.js",
+      "_false.js",
       "_environment.js"
     ]
   },
@@ -74,9 +86,10 @@
     "isEntry": true,
     "imports": [
       "_context.js",
-      "_equality.js",
+      "_state.svelte.js",
       "_exports.js",
-      "_utils.js"
+      "_utils.js",
+      "_index.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -85,9 +98,11 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
+      "_false.js",
       "_environment.js",
       "_exports.js",
       "_utils.js",
+      "_index.js",
       "_internal.js",
       "_shared.js"
     ]
@@ -98,7 +113,14 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index2.js",
+      "_context.js",
+      "_exports.js",
+      "_utils.js",
+      "_state.svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.DXPfTRbs.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -107,11 +129,66 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_context.js"
     ],
     "css": [
       "_app/immutable/assets/_page.B0RJZuuX.css"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "entries/pages/about/_page.svelte.js",
+    "name": "entries/pages/about/_page.svelte",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C1eK_kds.css"
+    ]
+  },
+  "src/routes/challenges/+page.svelte": {
+    "file": "entries/pages/challenges/_page.svelte.js",
+    "name": "entries/pages/challenges/_page.svelte",
+    "src": "src/routes/challenges/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BaDFdcsB.css"
+    ]
+  },
+  "src/routes/challenges/[id]/+page.svelte": {
+    "file": "entries/pages/challenges/_id_/_page.svelte.js",
+    "name": "entries/pages/challenges/_id_/_page.svelte",
+    "src": "src/routes/challenges/[id]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_exports.js",
+      "_utils.js",
+      "_state.svelte.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CGkCKFnX.css"
+    ]
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "entries/pages/contact/_page.svelte.js",
+    "name": "entries/pages/contact/_page.svelte",
+    "src": "src/routes/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_context.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BUXA-kxN.css"
     ]
   }
 }
